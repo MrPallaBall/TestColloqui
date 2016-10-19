@@ -103,8 +103,8 @@ public abstract class Sensori {
             conn.setDoOutput(true);
             conn.setRequestMethod("GET");
             conn.setRequestProperty("Content-Type", "application/json");
-            OutputStream os = conn.getOutputStream();
-            os.flush();
+            //OutputStream os = conn.getOutputStream();
+            //os.flush();
             BufferedReader br = new BufferedReader(new InputStreamReader((conn.getInputStream())));
             String output = "";
             while ((output = br.readLine()) != null) {
